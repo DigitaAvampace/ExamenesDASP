@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Examen Interactivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .pregunta {
+      margin-bottom: 20px;
+    }
+    .opciones label {
+      display: block;
+      margin-left: 20px;
+    }
+    #resultado, #revisarErrores {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Examen Interactivo</h1>
+  
+  <!-- Sección para elegir el examen -->
+  <div id="examenSeleccion"></div>
+  
+  <!-- Sección que contendrá el examen -->
+  <div id="contenidoExamen" style="display:none;"></div>
+  
+  <!-- Sección para mostrar resultados -->
+  <div id="resultado"></div>
+  
+  <!-- Sección para revisar explicaciones -->
+  <div id="revisarErrores" style="display:none;"></div>
+  
+  <script>
+    // URL RAW del archivo índice en GitHub (asegúrate de que el repositorio sea público)
+    const urlExamenIndice = 'https://raw.githubusercontent.com/DigitaAvampace/ExamenesDASP/main/indice.json';
+    
+    let examenesData = null;       // Array de exámenes (con metadata)
+    let examenActual = null;       // JSON completo del examen seleccionado (preguntas, respuestas_correctas, banco_explicaciones)
+    
+    // Función para mostrar el listado de exámenes disponibles
+    function mostrarListadoExamenes() {
+      const div = document.getElementById("examenSeleccion");
+      div.innerHTML = "<h2>Seleccione un examen:</h2>";
+      examenesData.forEach(examen => {
+        const btn = document.createElement("button");
+        btn.textContent = examen.version;
+        btn.style.marginRight = "10px";
+        btn.addEventListener("click", () => cargarExamen(examen));
+        div.appendChild(btn);
+      });
+    }
+    
+    // Función para cargar el examen seleccionado
+    function cargarExamen(examen) {
+      // Construir la URL RAW para el examen
+      const baseUrl = "https://raw.githubusercontent.com/DigitaAvampace/ExamenesDASP/main";
+      const urlExamen = baseUrl + examen.ruta;
+      fetch(urlExamen)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('No se pudo cargar el examen. Verifica la URL RAW.');
+          }
+          return response.json();
+        })
+        .then(data => {
+          examenActual = data;
+          mostrarExamen(data);
+        })
+        .catch(err => {
+          document.getElementById("contenidoExamen").innerHTML = "<p>Error: " + err.message + "</p>";
+        });
+    }
+    
+    // Función para mostrar el examen en pantalla
+    function mostrarExamen(examen) {
+      const contenedor = document.getElementById("contenidoExamen");
+      contenedor.style.display = "block";
+      contenedor.innerHTML = "";
+      examen.preguntas.forEach(pregunta => {
+        const divPregunta = document.createElement("div");
+        divPregunta.className = "pregunta";
+        let html = `<strong>${pregunta.num}. ${pregunta.pregunta}</strong><br>`;
+        for (let op in pregunta.opciones) {
+          html += `<label><input type="radio" name="pregunta${pregunta.num}" value="${op}"> (${op}) ${pregunta.opciones[op]}</label>`;
+        }
+        divPregunta.innerHTML = html;
+        contenedor.appendChild(divPregunta);
+      });
+      // Agregar botón para enviar el examen
+      const btnEnviar = document.createElement("button");
+      btnEnviar.textContent = "Enviar Examen";
+      btnEnviar.addEventListener("click", enviarExamen);
+      contenedor.appendChild(btnEnviar);
+    }
+    
+    // Función para enviar el examen y mostrar resultados y explicaciones
+    function enviarExamen() {
+      if (!examenActual) return;
+      let total = examenActual.preguntas.length;
+      let correctas = 0;
+      let htmlResultados = "<h2>Resultados</h2>";
+      examenActual.preguntas.forEach(pregunta => {
+        const respuestaElem = document.querySelector(`input[name="pregunta${pregunta.num}"]:checked`);
+        const respuestaUsuario = respuestaElem ? respuestaElem.value : "No respondida";
+        const respuestaCorrecta = examenActual.respuestas_correctas[pregunta.num];
+        const isCorrecta = (respuestaUsuario === respuestaCorrecta);
+        if (isCorrecta) correctas++;
+        htmlResultados += `<div>
+          <strong>Pregunta ${pregunta.num}:</strong> Tu respuesta: (${respuestaUsuario}) ${pregunta.opciones[respuestaUsuario] || ""}
+          - ${isCorrecta ? "<span style='color:green;'>Correcta</span>" : "<span style='color:red;'>Incorrecta</span>"}
+          <div class="explicacion"><em>Explicación:</em> ${examenActual.banco_explicaciones[pregunta.num]}</div>
+        </div><hr>`;
+      });
+      htmlResultados = `<p>Has acertado ${correctas} de ${total} preguntas.</p>` + htmlResultados;
+      document.getElementById("resultado").innerHTML = htmlResultados;
+      // También mostrar la sección de revisión de preguntas y explicaciones
+      document.getElementById("revisarErrores").style.display = "block";
+      document.getElementById("revisarErrores").innerHTML = "<h2>Revisión de Preguntas y Explicaciones</h2>" + htmlResultados;
+    }
+    
+    // Cargar el archivo índice
+    fetch(urlExamenIndice)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se pudo cargar el índice. Revisa que uses la URL RAW y que el repositorio sea público.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (!data.examenes) {
+          throw new Error('El JSON no tiene la propiedad "examenes".');
+        }
+        examenesData = data.examenes;
+        mostrarListadoExamenes();
+      })
+      .catch(error => {
+        document.body.innerHTML = '<p>Error al cargar el índice: ' + error.message + '</p>';
+      });
+  </script>
+</body>
+</html>
