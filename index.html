@@ -11,10 +11,17 @@
     .pregunta {
       margin-bottom: 20px;
     }
-    .opciones label {
-      display: block;
-      margin-left: 20px;
-    }
+   .opciones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Espacio entre cada opción */
+  background-color: #e0e0e0; /* Fondo gris claro */
+  padding: 10px;
+}
+.opciones label {
+  margin: 0;
+}
+
     #resultado, #revisarErrores {
       margin-top: 20px;
       padding: 10px;
@@ -93,10 +100,11 @@
         const divPregunta = document.createElement("div");
         divPregunta.className = "pregunta";
         // Se usa "pregunta.num" porque en este JSON se define "num"
-        let html = `<strong>${pregunta.numero}. ${pregunta.pregunta}</strong><br>`;
-        for (let op in pregunta.opciones) {
-          html += `<label><input type="radio" name="pregunta${pregunta.numero}" value="${op}"> (${op}) ${pregunta.opciones[op]}</label>`;
-        }
+      let html = `<strong>${pregunta.numero}. ${pregunta.pregunta}</strong><br>`;
+for (let op in pregunta.opciones) {
+  html += `<label><input type="radio" name="pregunta${pregunta.numero}" value="${op}"> (${op}) ${pregunta.opciones[op]}</label>`;
+}
+
         divPregunta.innerHTML = html;
         contenedor.appendChild(divPregunta);
       });
