@@ -100,13 +100,12 @@
         const divPregunta = document.createElement("div");
         divPregunta.className = "pregunta";
         // Se usa "pregunta.num" porque en este JSON se define "num"
-     let html = `<strong>${pregunta.numero}. ${pregunta.pregunta}</strong><br>`;
+   let html = `<strong>${pregunta.numero}. ${pregunta.pregunta}</strong><br>`;
 html += `<div class="opciones">`;
 for (let op in pregunta.opciones) {
   html += `<label><input type="radio" name="pregunta${pregunta.numero}" value="${op}"> (${op}) ${pregunta.opciones[op]}</label>`;
 }
 html += `</div>`;
-
 
         divPregunta.innerHTML = html;
         contenedor.appendChild(divPregunta);
