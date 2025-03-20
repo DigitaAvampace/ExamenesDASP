@@ -92,6 +92,7 @@
       examen.preguntas.forEach(pregunta => {
         const divPregunta = document.createElement("div");
         divPregunta.className = "pregunta";
+        // Se usa "pregunta.num" porque en este JSON se define "num"
         let html = `<strong>${pregunta.num}. ${pregunta.pregunta}</strong><br>`;
         for (let op in pregunta.opciones) {
           html += `<label><input type="radio" name="pregunta${pregunta.num}" value="${op}"> (${op}) ${pregunta.opciones[op]}</label>`;
@@ -113,8 +114,10 @@
       let correctas = 0;
       let htmlResultados = "<h2>Resultados</h2>";
       examenActual.preguntas.forEach(pregunta => {
+        // Se obtiene la respuesta seleccionada
         const respuestaElem = document.querySelector(`input[name="pregunta${pregunta.num}"]:checked`);
         const respuestaUsuario = respuestaElem ? respuestaElem.value : "No respondida";
+        // Se asume que respuestas_correctas es un objeto con claves numéricas (como "1", "2", etc.)
         const respuestaCorrecta = examenActual.respuestas_correctas[pregunta.num];
         const isCorrecta = (respuestaUsuario === respuestaCorrecta);
         if (isCorrecta) correctas++;
