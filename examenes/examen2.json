@@ -1,0 +1,368 @@
+        "version": "Examen_2",
+        "preguntas": [
+            {
+                "num": 1,
+                "pregunta": "¿Qué papel juegan los datos en el fortalecimiento de la competitividad de una empresa en la era digital?",
+                "opciones": {
+                    "a": "Solo incrementan el volumen de información.",
+                    "b": "Facilitan la toma de decisiones estratégicas basadas en análisis detallados.",
+                    "c": "Aumentan únicamente la inversión en infraestructura.",
+                    "d": "Reducen la necesidad de análisis de mercado."
+                }
+            },
+            {
+                "num": 2,
+                "pregunta": "¿Cuál es la etapa del ciclo de vida del dato donde se realiza la limpieza y transformación para convertir datos crudos en información útil?",
+                "opciones": {
+                    "a": "Recolección.",
+                    "b": "Procesamiento.",
+                    "c": "Almacenamiento.",
+                    "d": "Eliminación."
+                }
+            },
+            {
+                "num": 3,
+                "pregunta": "En términos conceptuales, ¿cómo se diferencia un dato de la información?",
+                "opciones": {
+                    "a": "El dato es analizado y la información es sin procesar.",
+                    "b": "El dato es una unidad básica y la información es su interpretación en contexto.",
+                    "c": "Ambos son idénticos en significado.",
+                    "d": "La información es la suma de datos sin análisis."
+                }
+            },
+            {
+                "num": 4,
+                "pregunta": "¿Cuál de las siguientes no es una de las Vs clásicas que definen Big Data?",
+                "opciones": {
+                    "a": "Veracidad.",
+                    "b": "Velocidad.",
+                    "c": "Variabilidad.",
+                    "d": "Variedad."
+                }
+            },
+            {
+                "num": 5,
+                "pregunta": "¿Qué ventaja proporciona el uso del almacenamiento en la nube respecto a la infraestructura tradicional?",
+                "opciones": {
+                    "a": "Mayor dependencia de servidores locales.",
+                    "b": "Escalabilidad y acceso remoto flexible.",
+                    "c": "Necesidad de mayor mantenimiento físico.",
+                    "d": "Limitación en el acceso a datos en tiempo real."
+                }
+            },
+            {
+                "num": 6,
+                "pregunta": "¿Cómo contribuyen el Big Data y el machine learning a la generación de inteligencia empresarial?",
+                "opciones": {
+                    "a": "Generando grandes volúmenes de datos sin análisis.",
+                    "b": "Permitiendo la identificación de patrones y tendencias que impulsan decisiones estratégicas.",
+                    "c": "Reduciendo la precisión en la toma de decisiones.",
+                    "d": "Limitando el acceso a información relevante."
+                }
+            },
+            {
+                "num": 7,
+                "pregunta": "La ciencia de datos en las empresas se utiliza principalmente para:",
+                "opciones": {
+                    "a": "Aumentar la cantidad de datos sin análisis.",
+                    "b": "Optimizar procesos mediante el análisis de grandes volúmenes de datos.",
+                    "c": "Eliminar la participación humana en la toma de decisiones.",
+                    "d": "Reducir la inversión en tecnología."
+                }
+            },
+            {
+                "num": 8,
+                "pregunta": "¿Cuál es un beneficio esencial de la transformación digital en los sectores productivos?",
+                "opciones": {
+                    "a": "Aumenta la complejidad sin beneficios operativos.",
+                    "b": "Incrementa la eficiencia y la capacidad de respuesta ante cambios del mercado.",
+                    "c": "Reduce la automatización de procesos.",
+                    "d": "Disminuye la capacidad de respuesta ante demandas del cliente."
+                }
+            },
+            {
+                "num": 9,
+                "pregunta": "¿Por qué es importante la integración de áreas (producción, negocio, comunicaciones) en un proyecto de transformación digital?",
+                "opciones": {
+                    "a": "Para centralizar únicamente la tecnología sin coordinación.",
+                    "b": "Para asegurar la implementación coherente y maximizar beneficios.",
+                    "c": "Para disminuir la colaboración entre departamentos.",
+                    "d": "Para focalizarse solo en la reducción de costos."
+                }
+            },
+            {
+                "num": 10,
+                "pregunta": "La aplicación de tecnologías IoT en la industria permite:",
+                "opciones": {
+                    "a": "La recolección de datos en tiempo real y optimización de procesos productivos.",
+                    "b": "Solo servir para la gestión administrativa.",
+                    "c": "Incrementar el consumo de energía sin mejorar procesos.",
+                    "d": "El aislamiento de los sistemas de producción."
+                }
+            },
+            {
+                "num": 11,
+                "pregunta": "En el contexto del almacenamiento en la nube, ¿por qué es crítica la encriptación de datos?",
+                "opciones": {
+                    "a": "Aumenta el costo sin ofrecer beneficios reales.",
+                    "b": "Protege la información contra accesos no autorizados y ciberataques.",
+                    "c": "Es un requisito menor sin impacto en la seguridad.",
+                    "d": "Permite el acceso compartido sin restricciones."
+                }
+            },
+            {
+                "num": 12,
+                "pregunta": "¿Qué distingue al deep learning dentro del campo del machine learning?",
+                "opciones": {
+                    "a": "Su uso de algoritmos simples y poca dependencia de datos.",
+                    "b": "La utilización de redes neuronales profundas que requieren grandes volúmenes de datos.",
+                    "c": "La aplicación exclusiva a datos estructurados.",
+                    "d": "Su aplicación únicamente en procesos de almacenamiento."
+                }
+            },
+            {
+                "num": 13,
+                "pregunta": "¿Cuál es un riesgo asociado con la dependencia de un proveedor de servicios en la nube?",
+                "opciones": {
+                    "a": "Mejora inmediata de la infraestructura.",
+                    "b": "Potencial pérdida de datos o interrupciones si el proveedor falla.",
+                    "c": "Incremento en la interoperabilidad entre sistemas.",
+                    "d": "Reducción de costos operativos sin riesgos."
+                }
+            },
+            {
+                "num": 14,
+                "pregunta": "¿Qué ventaja ofrece la transformación digital en la gestión de la cadena de suministro?",
+                "opciones": {
+                    "a": "Aumento en la burocracia operativa.",
+                    "b": "Optimización de inventarios y reducción de tiempos de respuesta.",
+                    "c": "Incremento en la complejidad sin mejoras claras.",
+                    "d": "Disminución en la capacidad de análisis de datos."
+                }
+            },
+            {
+                "num": 15,
+                "pregunta": "Para el éxito de un proyecto de transformación digital, es imprescindible:",
+                "opciones": {
+                    "a": "Ignorar la integración entre departamentos.",
+                    "b": "Establecer objetivos claros y alinear todas las áreas de la empresa.",
+                    "c": "Priorizar únicamente la inversión en hardware.",
+                    "d": "Reducir la capacitación del personal."
+                }
+            },
+            {
+                "num": 16,
+                "pregunta": "La documentación de cambios en un proceso de transformación digital es importante porque:",
+                "opciones": {
+                    "a": "Solo es necesaria para auditorías externas.",
+                    "b": "Permite el seguimiento, evaluación y ajuste continuo del proyecto.",
+                    "c": "Es un trámite sin impacto real en la gestión del cambio.",
+                    "d": "Solo se utiliza en fases iniciales del proyecto."
+                }
+            },
+            {
+                "num": 17,
+                "pregunta": "¿Cuál es una medida esencial para mitigar riesgos en la protección de datos durante la transformación digital?",
+                "opciones": {
+                    "a": "No realizar análisis de brechas de seguridad.",
+                    "b": "Implementar controles de seguridad avanzados y realizar evaluaciones periódicas.",
+                    "c": "Delegar la seguridad únicamente al proveedor.",
+                    "d": "Reducir el acceso a los datos sin análisis."
+                }
+            },
+            {
+                "num": 18,
+                "pregunta": "La automatización en procesos productivos contribuye principalmente a:",
+                "opciones": {
+                    "a": "Incrementar errores humanos.",
+                    "b": "Reducir la intervención manual y mejorar la eficiencia.",
+                    "c": "Aumentar la dependencia de sistemas obsoletos.",
+                    "d": "Disminuir la velocidad operativa."
+                }
+            },
+            {
+                "num": 19,
+                "pregunta": "¿Cómo influye la integración de sistemas en la calidad de la toma de decisiones empresariales?",
+                "opciones": {
+                    "a": "Aísla la información en compartimentos estancos.",
+                    "b": "Proporciona una visión integral y datos actualizados para decisiones informadas.",
+                    "c": "Complica innecesariamente el flujo de información.",
+                    "d": "Reduce la capacidad de análisis en tiempo real."
+                }
+            },
+            {
+                "num": 20,
+                "pregunta": "La formación y capacitación del personal en nuevas tecnologías es:",
+                "opciones": {
+                    "a": "Irrelevante si se implementa un sistema automatizado.",
+                    "b": "Fundamental para asegurar el uso efectivo de las herramientas digitales.",
+                    "c": "Necesaria solo durante la fase de implementación.",
+                    "d": "Una tarea opcional sin impacto en la transformación."
+                }
+            },
+            {
+                "num": 21,
+                "pregunta": "¿Cuál es el principal desafío en la integración de nuevas tecnologías en una infraestructura existente?",
+                "opciones": {
+                    "a": "La compatibilidad y adaptación de los sistemas actuales.",
+                    "b": "La ausencia de riesgos en la implementación.",
+                    "c": "La homogeneidad de todas las soluciones tecnológicas.",
+                    "d": "La facilidad para integrar sin cambios."
+                }
+            },
+            {
+                "num": 22,
+                "pregunta": "¿Qué beneficio aporta el análisis predictivo en la gestión de inventarios?",
+                "opciones": {
+                    "a": "Permite mantener inventarios excesivos sin control.",
+                    "b": "Optimiza el stock anticipando la demanda futura.",
+                    "c": "Ignora las tendencias del mercado.",
+                    "d": "Se basa únicamente en datos históricos sin proyección."
+                }
+            },
+            {
+                "num": 23,
+                "pregunta": "Para personalizar la experiencia del cliente, es fundamental:",
+                "opciones": {
+                    "a": "Recoger datos sin analizarlos.",
+                    "b": "Utilizar sistemas CRM y análisis de datos para segmentar y adaptar ofertas.",
+                    "c": "Establecer ofertas estandarizadas sin segmentación.",
+                    "d": "Reducir la interacción digital con los clientes."
+                }
+            },
+            {
+                "num": 24,
+                "pregunta": "El cumplimiento de normativas como el GDPR en el manejo de datos se vuelve crucial porque:",
+                "opciones": {
+                    "a": "Solo es relevante para grandes corporaciones.",
+                    "b": "Garantiza la protección de la privacidad y el uso ético de la información.",
+                    "c": "Es una formalidad sin impacto real en la seguridad.",
+                    "d": "Limita la capacidad de análisis de los datos."
+                }
+            },
+            {
+                "num": 25,
+                "pregunta": "¿Por qué es importante planificar la transformación digital considerando tanto necesidades actuales como futuras?",
+                "opciones": {
+                    "a": "Se centra únicamente en el corto plazo.",
+                    "b": "Permite que las soluciones implementadas sean escalables y sostenibles.",
+                    "c": "Las necesidades futuras no afectan la transformación.",
+                    "d": "Evita la integración de nuevas tecnologías."
+                }
+            },
+            {
+                "num": 26,
+                "pregunta": "¿Qué diferencia principal existe entre el almacenamiento en bloques y el de objetos en la nube?",
+                "opciones": {
+                    "a": "El almacenamiento en bloques es ideal para bases de datos con baja latencia.",
+                    "b": "El almacenamiento de objetos se utiliza para bases de datos con alta latencia.",
+                    "c": "No existe diferencia entre ambos.",
+                    "d": "Ambos son idénticos en su uso."
+                }
+            },
+            {
+                "num": 27,
+                "pregunta": "¿De qué forma impulsa la digitalización la innovación en el desarrollo de productos?",
+                "opciones": {
+                    "a": "Limitando la capacidad de análisis.",
+                    "b": "Permitiendo identificar tendencias y crear soluciones adaptadas a la demanda del mercado.",
+                    "c": "Estandarizando productos sin análisis.",
+                    "d": "Reduciendo la capacidad de respuesta a cambios."
+                }
+            },
+            {
+                "num": 28,
+                "pregunta": "¿Qué ventaja estratégica ofrece el uso de cloud computing en la transformación digital?",
+                "opciones": {
+                    "a": "Aumenta la dependencia de la infraestructura física.",
+                    "b": "Permite la gestión flexible y escalable de recursos sin grandes inversiones en infraestructura.",
+                    "c": "Limita la capacidad de integración de sistemas.",
+                    "d": "Incrementa los costos fijos sin beneficios."
+                }
+            },
+            {
+                "num": 29,
+                "pregunta": "¿Cómo mejora la transformación digital la experiencia del cliente?",
+                "opciones": {
+                    "a": "Proporcionando interacciones genéricas sin personalización.",
+                    "b": "A través de sistemas integrados que permiten una comunicación y atención personalizada.",
+                    "c": "Reduciendo la diversidad de canales de atención.",
+                    "d": "Estableciendo un servicio estandarizado sin adaptación."
+                }
+            },
+            {
+                "num": 30,
+                "pregunta": "¿Qué ventaja ofrece el análisis en tiempo real para la toma de decisiones en entornos digitales?",
+                "opciones": {
+                    "a": "Permite decisiones basadas únicamente en datos históricos.",
+                    "b": "Ofrece información actualizada que facilita la respuesta inmediata a cambios y oportunidades.",
+                    "c": "Aumenta la latencia en el procesamiento de información.",
+                    "d": "Disminuye la capacidad de análisis estratégico."
+                }
+            }
+        ],
+        "respuestas_correctas": {
+            "1": "b",
+            "2": "b",
+            "3": "b",
+            "4": "c",
+            "5": "b",
+            "6": "b",
+            "7": "b",
+            "8": "b",
+            "9": "b",
+            "10": "a",
+            "11": "b",
+            "12": "b",
+            "13": "b",
+            "14": "b",
+            "15": "b",
+            "16": "b",
+            "17": "b",
+            "18": "b",
+            "19": "b",
+            "20": "b",
+            "21": "a",
+            "22": "b",
+            "23": "b",
+            "24": "b",
+            "25": "b",
+            "26": "a",
+            "27": "b",
+            "28": "b",
+            "29": "b",
+            "30": "b"
+        },
+        "banco_explicaciones": {
+            "1": "La opción 'b' es correcta porque el análisis detallado de datos permite diseñar estrategias que fortalecen la competitividad, como lo respaldan estudios en gestión estratégica.",
+            "2": "La etapa de procesamiento es la encargada de limpiar y transformar los datos en información útil para la toma de decisiones.",
+            "3": "La diferencia radica en que el dato es una unidad básica y su interpretación en contexto se traduce en información.",
+            "4": "Las Vs clásicas de Big Data son: Volumen, Velocidad, Variedad y Veracidad. 'Variabilidad' no forma parte de ellas.",
+            "5": "La escalabilidad y el acceso remoto son ventajas distintivas de la nube, permitiendo mayor flexibilidad operativa.",
+            "6": "El machine learning y Big Data permiten identificar patrones que se traducen en insights estratégicos, según diversas publicaciones académicas.",
+            "7": "El propósito principal de la ciencia de datos es optimizar procesos a través del análisis de datos, lo que mejora la eficiencia empresarial.",
+            "8": "La transformación digital aumenta la eficiencia y la capacidad de respuesta ante cambios del mercado, mejorando la competitividad.",
+            "9": "La integración de áreas garantiza que todos los departamentos trabajen alineados, lo que maximiza los beneficios del proceso digital.",
+            "10": "Las tecnologías IoT permiten recolectar datos en tiempo real, esenciales para la optimización de procesos productivos.",
+            "11": "La encriptación protege la información sensible contra accesos no autorizados, cumpliendo además con normativas internacionales.",
+            "12": "Deep learning se diferencia por utilizar redes neuronales profundas y grandes volúmenes de datos, lo que le permite resolver problemas complejos.",
+            "13": "La dependencia de un proveedor puede generar interrupciones o pérdidas de datos, lo que representa un riesgo significativo.",
+            "14": "La digitalización de la cadena de suministro optimiza inventarios y tiempos de respuesta, como se ha demostrado en estudios de logística.",
+            "15": "Establecer objetivos claros y alinear todas las áreas es fundamental para el éxito de la transformación digital.",
+            "16": "La documentación sistemática de cambios permite seguimiento y mejora continua del proyecto, facilitando auditorías internas y externas.",
+            "17": "Implementar controles de seguridad avanzados y evaluaciones periódicas es esencial para mitigar riesgos en la protección de datos.",
+            "18": "La automatización reduce la intervención manual, minimiza errores y mejora la eficiencia operativa, según evidencia empírica en industrias.",
+            "19": "La integración de sistemas consolida información y permite tomar decisiones estratégicas basadas en datos integrados y actualizados.",
+            "20": "La capacitación del personal es clave para que la tecnología se utilice de forma óptima y se mantenga el ritmo de innovación.",
+            "21": "El desafío principal es la compatibilidad entre nuevas tecnologías y sistemas existentes, lo cual requiere ajustes y actualizaciones.",
+            "22": "El análisis predictivo ayuda a anticipar la demanda, optimizando la gestión de inventarios y reduciendo costos.",
+            "23": "El uso de un CRM que integre análisis de datos permite personalizar ofertas, mejorando la experiencia y fidelización del cliente.",
+            "24": "Cumplir con normativas como GDPR es crucial para asegurar el uso ético y la privacidad de la información.",
+            "25": "Planificar considerando tanto necesidades actuales como futuras garantiza que las soluciones sean escalables y sostenibles.",
+            "26": "El almacenamiento en bloques es ideal para bases de datos críticas que requieren baja latencia, diferenciándose del almacenamiento de objetos.",
+            "27": "La digitalización impulsa la innovación al permitir identificar tendencias y desarrollar productos adaptados a la demanda.",
+            "28": "El cloud computing permite gestionar recursos de forma flexible y escalable sin la necesidad de grandes inversiones en infraestructura física.",
+            "29": "La transformación digital mejora la experiencia del cliente mediante la personalización y la integración de canales de comunicación.",
+            "30": "El análisis en tiempo real ofrece información actualizada que facilita la respuesta inmediata a cambios y oportunidades en el mercado."
+        }
+    }
