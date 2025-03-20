@@ -1,1 +1,41 @@
+{
+    "examenes": [
+        {
+            "version": "Examen 1",
+            "ruta": "/examenes/examen1.json"
+        },
+        {
+            "version": "Examen 2",
+            "ruta": "/examenes/examen2.json"
+        },
+        {
+            "version": "Examen 3",
+            "ruta": "/examenes/examen3.json"
+        },
+        {
+            "version": "Examen 4",
+            "ruta": "/examenes/examen4.json"
+        },
+        {
+            "version": "Examen 5",
+            "ruta": "/examenes/examen5.json"
+        },
+        {
+            "version": "Examen 6",
+            "ruta": "/examenes/examen6.json"
+        },
+        {
+            "version": "Examen 7",
+            "ruta": "/examenes/examen7.json"
+        },
+        {
+            "version": "Examen 8",
+            "ruta": "/examenes/examen8.json"
+        },
+        {
+            "version": "Examen 9",
+            "ruta": "/examenes/examen9.json"
+        }
+    ]
+}
 
