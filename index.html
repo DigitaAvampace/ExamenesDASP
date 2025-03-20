@@ -43,7 +43,7 @@
     const urlExamenIndice = 'https://raw.githubusercontent.com/DigitaAvampace/ExamenesDASP/main/indice.json';
     
     let examenesData = null;       // Array de exámenes (con metadata)
-    let examenActual = null;       // JSON completo del examen seleccionado (preguntas, respuestas_correctas, banco_explicaciones)
+    let examenActual = null;       // JSON completo del examen seleccionado (con preguntas, respuestas_correctas, banco_explicaciones)
     
     // Función para mostrar el listado de exámenes disponibles
     function mostrarListadoExamenes() {
@@ -60,9 +60,13 @@
     
     // Función para cargar el examen seleccionado
     function cargarExamen(examen) {
-      // Construir la URL RAW para el examen
-      const baseUrl = "https://raw.githubusercontent.com/DigitaAvampace/ExamenesDASP/main";
-      const urlExamen = baseUrl + examen.ruta;
+      const baseUrl = "https://raw.githubusercontent.com/DigitaAvampace/ExamenesDASP/main/";
+      // Eliminar la barra inicial de la ruta si existe
+      let rutaExamen = examen.ruta;
+      if (rutaExamen.startsWith("/")) {
+        rutaExamen = rutaExamen.substring(1);
+      }
+      const urlExamen = baseUrl + rutaExamen;
       fetch(urlExamen)
         .then(response => {
           if (!response.ok) {
@@ -75,6 +79,7 @@
           mostrarExamen(data);
         })
         .catch(err => {
+          console.error("Error al cargar el examen:", err);
           document.getElementById("contenidoExamen").innerHTML = "<p>Error: " + err.message + "</p>";
         });
     }
@@ -121,7 +126,7 @@
       });
       htmlResultados = `<p>Has acertado ${correctas} de ${total} preguntas.</p>` + htmlResultados;
       document.getElementById("resultado").innerHTML = htmlResultados;
-      // También mostrar la sección de revisión de preguntas y explicaciones
+      // Mostrar también la sección de revisión con explicaciones completas
       document.getElementById("revisarErrores").style.display = "block";
       document.getElementById("revisarErrores").innerHTML = "<h2>Revisión de Preguntas y Explicaciones</h2>" + htmlResultados;
     }
